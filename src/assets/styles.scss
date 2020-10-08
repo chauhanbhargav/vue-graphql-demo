@@ -1,0 +1,147 @@
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 480px;
+
+/* Card CSS Property */
+.card {
+    .md-primary {
+        .md-layout.md-gutter {
+            margin: 20px;
+
+            .md-layout-item {
+                padding: 10px;
+                align-items: stretch
+            }
+
+            .md-card.md-theme-default {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+
+        .card-expansion {
+            height: 480px;
+        }
+
+        .md-card {
+            width: 320px;
+            margin: 4px;
+            display: inline-block;
+            vertical-align: top;
+
+            .md-card-header {
+                .md-title {
+                    text-align: left;
+                }
+
+                .md-subhead {
+                    padding-top: 20px;
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+}
+
+/* Header CSS Property */
+.header {
+    .md-app-container {
+        .md-primary {
+            .nav-title {
+                width: 33.33%;
+            }
+
+            .nav-search {
+                width: 45%;
+                text-align: center;
+            }
+
+            .nav-sort {
+                width: 20.00%;
+                text-align: right;
+            }
+
+            input {
+                background-color: transparent;
+                color: #ffffff;
+                border: 2px solid #ffffff;
+                padding: 8px 25px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                border-radius: 50px;
+                width: 400px;
+            }
+
+            button {
+                background-color: white;
+                color: black;
+                border: 2px solid #e7e7e7;
+                padding: 8px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+/* Using SCSS variables to store breakpoints for tablet */
+@media (max-width: $breakpoint-tablet) {
+    .header {
+        .md-app-container {
+            .md-primary {
+                .nav-search {
+                    width: 45%;
+                    text-align: left;
+                }
+
+                input {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+/* Using SCSS variables to store breakpoints for phone */
+@media (max-width: $breakpoint-phone) {
+    .header {
+        .md-app-container {
+            .md-primary {
+                .nav-title {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .nav-search {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .nav-sort {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* Loading CSS Property */
+.md-progress-spinner.md-indeterminate {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: none
+}
