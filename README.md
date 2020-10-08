@@ -3,7 +3,7 @@ This is front end Application using Vue.js and GraphQL for manage and display da
 
 ## Dependencies
 
-- [Vue](https://github.com/facebook/react) - Frontend framework.
+- [Vue](https://vuejs.org/v2/guide/) - Frontend framework.
 - [apollo-client](https://github.com/redux-saga/redux-saga) - For manage the side effects of your application.
 - [graphql](https://github.com/graphql/graphql-js) - A Query Language and Runtime which can target any service..
 - [vue-apollo](https://github.com/Akryum/vue-apollo) - Use Apollo and GraphQL with Vue.js.
