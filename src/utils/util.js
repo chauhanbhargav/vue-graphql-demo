@@ -2,6 +2,7 @@ export function truncateWords(sentence, amount, tail) {
     let truncated = sentence.substr(0, amount);
     return `${truncated} ${tail}`;
 }
+
 export function mergeData(comments, images) {
     let data = comments.map((data, i) => {
         let thumbnailUrl = images[i].thumbnailUrl;

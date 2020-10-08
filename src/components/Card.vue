@@ -10,14 +10,18 @@
           >
             <md-card>
               <md-card-media>
-                <img :src="data.url" alt="People" width="40%" />
+                <a :href="data.thumbnailUrl" target="_blank">
+                  <img :src="data.url" alt="People" width="40%" />
+                </a>
               </md-card-media>
               <md-card-header>
                 <div class="md-title">
                   {{ truncateWords(data.name, 20, "...") }}
+                  <md-tooltip>{{ data.name }}</md-tooltip>
                 </div>
                 <div class="md-subhead">
                   {{ truncateWords(data.body, 100, "...") }}
+                  <md-tooltip>{{ data.body }}</md-tooltip>
                 </div>
               </md-card-header>
             </md-card>
